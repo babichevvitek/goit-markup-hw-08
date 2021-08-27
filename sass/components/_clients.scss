@@ -1,0 +1,72 @@
+.clients{ 
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+  
+  .clients__logos{
+    display: flex;
+  }
+  
+  .clients__item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .clients__item{
+    margin-left: 0;
+    margin-right: 30px;
+    border-radius: 4px;
+    width: 170px;
+    height: 92px;
+  
+    &:last-child{
+      margin-right: 0;
+    } 
+    
+  }
+  
+  .clients__title{
+    margin-bottom: 50px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.03em;
+  }
+   
+  .clients__link{
+    position: relative;
+    display: flex;
+    fill: #AFB1B8;
+    width: 170px;
+    height: 92px;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid#AFB1B8;
+    padding: 0;
+    border-radius: 4px;
+    transition: fill $transition, border $transition;
+     
+      &:hover,
+      &:focus{
+        fill: $accent-color;
+        background-color: $hero-text-color;
+        border: 1px solid $accent-color;
+    
+       
+        
+      }
+   
+    }
+ 
+  
+  .clients__item{
+   @extend %list
+  }
+  
+ 
+  
+ 
