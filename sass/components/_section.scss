@@ -1,13 +1,22 @@
 
 .section{
-    padding-top: 94px;
-    padding-bottom: 94px;
-   }
-   
+  padding-top: 94px;
+  padding-bottom: 94px;
+
+   @media screen and (max-width: 768px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}   
    .section__list{
-     display: flex;
+     
      padding-top: 0;
      padding-bottom: 0;
+
+     @media screen and (min-width: 768px) {
+      display: flex;
+    }
+     
    }
    
    .section__one {
@@ -20,12 +29,16 @@
    .section__five{
      display: flex;
      margin-bottom: 30px;
-     width: 270px;
+     
      height: 120px;
      align-items: center;
      justify-content: center;
      background: $fon-text-color;
       border-radius: 4px;
+
+      @media screen and (min-width: 767px) {
+        width: 270px;
+      }
    }
    
    .section__title{

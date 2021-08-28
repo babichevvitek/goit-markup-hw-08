@@ -1,3 +1,12 @@
+.footer-container{
+ 
+  width: 1200px;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: baseline;
+  }
+}
 
 .destination{ 
 
@@ -80,13 +89,10 @@
    .join{
     width: 206px;
     margin-left: 70px;
+    
   }
 
-  .footer-container{
-    display: flex;
-    align-items: baseline;
-   width: 1200px;
-  }
+ 
   
   
   .join__title{
@@ -103,10 +109,15 @@
    
   }
   .join__super{
-    display: flex ;
+   
     justify-content: center;
    align-items: center;
    list-style: none;
+
+   @media screen and (min-width: 767px) {
+    display: flex ;
+  }
+
   }
 
   .join__link{
@@ -157,8 +168,12 @@
   
   
   .mailing-form{
-    display: flex;
-    align-items: center;
+    
+
+    @media screen and (min-width: 767px) {
+      display: flex;
+      align-items: center; 
+    }
   }
   
   .mailing__subscription{
@@ -185,9 +200,7 @@
     cursor: pointer;
   }
 
-  .form-footer{
-    display: flex;
-  }
+ 
 
   .mailing-form__airplane{
     display: flex;

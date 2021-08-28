@@ -1,12 +1,17 @@
 .clients{ 
-    padding-top: 94px;
-    padding-bottom: 94px;
+  padding-top: 94px;
+  padding-bottom: 94px; 
+    
   }
-  
+ 
   .clients__logos{
-    display: flex;
+   
+    @media screen and (min-width: 767px) {
+      display: flex;
+      
+    }
   }
-  
+
   .clients__item{
     display: flex;
     justify-content: center;
@@ -55,8 +60,6 @@
         fill: $accent-color;
         background-color: $hero-text-color;
         border: 1px solid $accent-color;
-    
-       
         
       }
    

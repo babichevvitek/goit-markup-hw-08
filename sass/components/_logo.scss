@@ -1,13 +1,22 @@
+ .logo-link{
+    @extend %text;
 
-.flex-center{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+
+  }
+
+ .flex-center{
+   align-items: center;
+   justify-content: center; 
+   display: flex;
+
+
   }
 
   .logo-link{
     padding-top: 24px;
     padding-bottom: 24px;
+
+    
   }
   
   .logo-link__website{
@@ -17,7 +26,8 @@
     font-size: 26px;
     line-height: 1.19;
     letter-spacing: 0.03em;
-  
+
+   
   }
   
   .logo-link{
@@ -29,6 +39,4 @@
     letter-spacing: 0.03em;
   }
   
-  .logo-link{
-    @extend %text;
-  }
+  

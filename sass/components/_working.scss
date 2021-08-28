@@ -1,6 +1,11 @@
 .working{
-    padding-top: 0;
-    padding-bottom: 94px;
+   display: none;
+
+    @media screen and (min-width: 1200px) {
+      padding-top: 0;
+      padding-bottom: 94px;
+      display: block;
+    }
    }
        
    .working__work{
@@ -13,6 +18,7 @@
      line-height: 1.16;
      text-align: center;
      letter-spacing: 0.03em;
+     
    }
    
    .working__product{
