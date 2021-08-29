@@ -2,6 +2,12 @@
     background: $fon-text-color;
     padding-top: 94px;
     padding-bottom: 94px;
+
+    @media screen and (max-width: 767px) {
+     padding-top: 60px;
+     padding-bottom: 60px;
+    }
+   
   
   }
 .team{
@@ -14,6 +20,13 @@
     line-height: 1.16;
     text-align: center;
     letter-spacing: 0.03em;
+
+    @media screen and (max-width: 767px) {
+     margin-bottom: 30px;
+     font-size: 28px;
+     line-height: 33px;
+    }
+
    }
    
    .team__people{
@@ -60,6 +73,8 @@
      display:flex ;
      list-style: none;
      justify-content: center;
+     
+
    }
    
    .team__link{
@@ -104,13 +119,25 @@
    }
    
    
+   
    .team__workers{
      background-color: $hero-text-color;
      box-shadow: $box;
      border-radius: 0px 0px 4px 4px;
-   
+
+     @media screen and (max-width: 767px) {
+      margin-bottom: 30px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+     @media screen and (min-width: 767px) {
+     
      &:not(:last-child) {
        margin-right: 30px;
       }
+
     } 
-   
+
+   } 
