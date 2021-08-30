@@ -321,7 +321,6 @@ ul, p {
   .hero__title {
     font-size: 26px;
     line-height: 42px;
-    letter-spacing: 6%;
   }
 }
 
@@ -686,16 +685,39 @@ ul, p {
   }
 }
 
-.clients__logos {
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin: -15px;
+@media screen and (max-width: 767px) {
+  .clients__logos {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin: -15px;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .clients__logos {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin: -15px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .clients__logos {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 
 .clients__item {
+  margin-left: 0;
+  margin-right: 30px;
   border-radius: 4px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -713,11 +735,17 @@ ul, p {
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 1199px) {
   .clients__item {
     -ms-flex-preferred-size: calc((100% - 6 * 15px) / 3);
         flex-basis: calc((100% - 6 * 15px) / 3);
     margin: 15px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .clients__item:last-child {
+    margin-right: 0;
   }
 }
 
@@ -734,7 +762,6 @@ ul, p {
 
 @media screen and (max-width: 767px) {
   .clients__title {
-    margin-bottom: 30px;
     font-size: 28px;
     line-height: 33px;
   }
@@ -776,6 +803,12 @@ ul, p {
 @media screen and (min-width: 768px) {
   .clients__link {
     width: 226px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .clients__link {
+    width: 170px;
   }
 }
 
@@ -897,9 +930,6 @@ ul, p {
   .join {
     width: 206px;
     margin-left: 70px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
   }
 }
 
@@ -926,7 +956,12 @@ ul, p {
       -ms-flex-align: center;
           align-items: center;
   list-style: none;
-  text-align: center;
+}
+
+@media screen and (max-width: 767px) {
+  .join__super {
+    text-align: center;
+  }
 }
 
 .join__link {

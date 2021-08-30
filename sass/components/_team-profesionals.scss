@@ -56,25 +56,24 @@
    }
    
    .team__professionals{
+     
      background: $fon-text-color;
      list-style: none;
-
      @media screen and (min-width: 768px) {
-     display: flex;
-    }
+      display: flex;
+     }
     
-   }
+    }
 
    .team__professionals{
      @extend %list
    }
    
    .team__social{
-     display:flex ;
-     list-style: none;
-     justify-content: center;
-     
-
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    
    }
    
    .team__link{
@@ -90,13 +89,16 @@
      border-radius: 50%; 
      background-color: $icon-background-color;
      transition: background-color $transition, fill $transition;
+
     
      
    } 
    
    .team__item{
-     margin-right: 10px;
+    margin-right: 10px;
 
+    
+     
      &:last-child{
        margin-right: 0;
       }
@@ -134,10 +136,13 @@
     }
      @media screen and (min-width: 767px) {
      
-     &:not(:last-child) {
+      &:not(:last-child) {
        margin-right: 30px;
       }
 
     } 
 
    } 
+  
+   
+  
