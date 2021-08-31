@@ -21,18 +21,31 @@
                 <a class="logo-link" href="./index.html">
                     <span class="logo-link__website">Web</span>Studio
                 </a> 
+                <div class="menu-box">
+                    <button type="button" class="menu-toggle js-open-menu" 
+                    aria-expanded="false"
+                    aria-controls="mobile-menu">
+                   
+                       <svg width="40" height="40"  aria-label="Переключатель мобильного меню">
+                           <use class="menu-toggle__close" href="./images/icons 2.svg#icon-close_1" ></use>
+                           <use class="menu-toggle__menu" href="./images/icons 2.svg#icon-menu_1" ></use>
+                       </svg>
+                       <ul class="menu">
+
+                       </ul>
+                   </button>
+                </div>
+                   
+               
                 
-                <button type="button" class="menu-button is-open" 
-                 aria-expanded="false"
-                 data-menu-button>
-                    <svg width="40" height="40"  aria-label="Переключатель мобильного меню">
-                        <use class="menu-button__close" href="./images/icons 2.svg#icon-close_1" ></use>
-                        <use class="menu-button__menu" href="./images/icons 2.svg#icon-menu_1" ></use>
-                    </svg>
-                </button>
-                
-                <div class="menu-conteiner" id="menu-conteiner" data-menu >
-                    Контент
+                <div class="menu-container js-menu-container" id="mobile-menu">
+                    <button type="button" class="menu-toggle js-close-menu">
+                       <svg width="40" height="40"  aria-label="Переключатель мобильного меню">
+                           <use class="menu-toggle__close" href="./images/icons 2.svg#icon-close_1" ></use>
+                           <use class="menu-toggle__menu" href="./images/icons 2.svg#icon-menu_1" ></use>
+                       </svg>
+                   </button>
+                    
 
                 </div>
 
