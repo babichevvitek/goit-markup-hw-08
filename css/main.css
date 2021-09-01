@@ -1,5 +1,5 @@
 @charset "UTF-8";
-.page-header, .mobile-menu, .main-nav__site, .contact, .section__list, .team__professionals, .clients__item, .destination__street, .site, .portfolio {
+.page-header, .mobile-menu, .menu-toggle__title, .main-nav__site, .contact, .section__list, .team__professionals, .clients__item, .destination__street, .site, .portfolio {
   padding: 0;
   margin: 0;
   list-style: none;
@@ -19,7 +19,7 @@
   overflow: hidden;
 }
 
-.logo-link, .main-nav__link, .contact__link, .destination__link, .destination__studios, .portfolio__sites {
+.logo-link, .menu-toggle__link, .main-nav__link, .contact__link, .destination__link, .destination__studios, .portfolio__sites {
   text-decoration: none;
 }
 
@@ -144,6 +144,7 @@ ul, p {
   left: 0;
   width: 100vw;
   height: 100vh;
+  overflow-y: scroll;
   padding: 48px 40px 48px 40px;
   background-color: #ffffff;
   -webkit-transform: translateX(100%);
@@ -207,6 +208,25 @@ ul, p {
 
 .menu-toggle.js-open-menu .menu-toggle__close {
   display: none;
+}
+
+.menu-toggle__title {
+  margin: 0;
+  padding: 0;
+  display: block;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.menu-toggle__link {
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 47px;
+  letter-spacing: 0.02em;
+  color: #212121;
+  margin-bottom: 32px;
 }
 
 .main-nav {
@@ -831,6 +851,9 @@ ul, p {
 }
 
 .clients__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   margin-left: 0;
   margin-right: 30px;
   border-radius: 4px;

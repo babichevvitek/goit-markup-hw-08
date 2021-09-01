@@ -65,6 +65,7 @@
   left: 0;
   width: 100vw;
   height: 100vh;
+  overflow-y: scroll;
   padding: 48px 40px 48px 40px;
   background-color: $hero-text-color;
   transform: translateX(100%);
@@ -127,9 +128,25 @@
   display: none;
 }
 
+.menu-toggle__title{
 
+  margin: 0;
+  padding: 0;
+  display: block;
+  align-items: center;
+  @extend %list;
+}
 
-
+.menu-toggle__link{
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 47px;
+  letter-spacing: 0.02em;
+  color: $title-text-color;
+  margin-bottom: 32px;
+  @extend %text;
+}
 
 
 

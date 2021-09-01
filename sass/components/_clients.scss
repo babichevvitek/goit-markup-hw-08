@@ -1,6 +1,8 @@
 .clients{ 
   padding-top: 94px;
   padding-bottom: 94px; 
+  
+    
 
    @media screen and (max-width: 767px) {
      padding-top: 60px;
@@ -28,6 +30,7 @@
 }
  
   .clients__item{
+    display: flex;
     margin-left: 0;
     margin-right: 30px;
     border-radius: 4px;
