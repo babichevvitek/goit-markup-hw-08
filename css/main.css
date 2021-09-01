@@ -1,5 +1,5 @@
 @charset "UTF-8";
-.page-header, .main-nav__site, .contact, .section__list, .team__professionals, .clients__item, .destination__street, .site, .portfolio {
+.page-header, .mobile-menu, .main-nav__site, .contact, .section__list, .team__professionals, .clients__item, .destination__street, .site, .portfolio {
   padding: 0;
   margin: 0;
   list-style: none;
@@ -146,8 +146,8 @@ ul, p {
   height: 100vh;
   padding: 48px 40px 48px 40px;
   background-color: #ffffff;
-  -webkit-transform: translateX(200%);
-          transform: translateX(200%);
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
   -webkit-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -195,11 +195,6 @@ ul, p {
   top: 10px;
   right: 15px;
   color: #ffffff;
-}
-
-.mobile-menu {
-  padding: 0;
-  margin: 0;
 }
 
 .menu-toggle .menu-toggle__menu {
