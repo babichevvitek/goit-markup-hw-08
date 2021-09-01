@@ -109,7 +109,7 @@
  top: 10px;
  right: 15px;
  color: $hero-text-color;
- 
+
 }
 
 .mobile-menu{
@@ -118,8 +118,9 @@
 }
 
 
-.menu-toggle .menu-toggle__menu {
+.menu-toggle .menu-toggle__close {
   display: none;
+  overflow: scroll;
 }
 .menu-toggle.js-open-menu .menu-toggle__menu {
   display: block;
@@ -129,12 +130,14 @@
 }
 
 .menu-toggle__title{
-
-  margin: 0;
-  padding: 0;
+  position: absolute;
   display: block;
-  align-items: center;
+  font-weight: 500;
+  list-style: none;
+  top: 48px;
   @extend %list;
+  
+  
 }
 
 .menu-toggle__link{
@@ -144,13 +147,59 @@
   line-height: 47px;
   letter-spacing: 0.02em;
   color: $title-text-color;
-  margin-bottom: 32px;
+  overflow:  10px;
   @extend %text;
 }
+.social{
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  
+  bottom: 48px;
+}
+.auth-mobile {
+  position: absolute;
+ bottom: 134px;
+  @extend %list;
+}
 
+.auth-mobile__link{
 
+  position: absolute;
+  font-size: 34px;
+  line-height: 40px;
+  letter-spacing: 0.02em;
+  text-align: center;
+  @extend %text;
+  color: $feature-text-color;
+  list-style: none;
+  bottom: 32px;
+}
+.auth-mobile__mailto{
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 0.02em;
+  text-align: center;
+  @extend %text;
+  color: $feature-text-color;
+  list-style: none;
+  margin-top: 32px;
+}
+.social__link{
+  font-size: 18px;
+ line-height: 22px;
+ letter-spacing: 0.02em;
+ color: $accent-color;
+ @extend %text;
+ margin-right: 20px;
 
-
+ 
+}
+.social__link:not(:last-child) {
+  margin-right: 20px;
+}
 
 
 

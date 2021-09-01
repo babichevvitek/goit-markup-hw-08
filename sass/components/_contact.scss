@@ -1,14 +1,18 @@
 
  .contact{
-  display: none;
-
-    @media screen and (min-width: 768px) {
-      display: block;
-      margin-left: auto;
-      padding-top: 21px;
-      padding-bottom: 21px;
+  @media screen and (max-width: 767px) {
      
-    }
+    display: none;
+  }
+
+   @media (min-width: 768px) and  (max-width: 1199px){
+     
+    margin-left: auto;
+    padding-top: 21px;
+    padding-bottom: 21px;
+   
+   }
+   
     @media screen and (min-width: 1200px) {
       display: flex;
       margin-left: auto;
@@ -17,8 +21,10 @@
   }
   
   .contact__item{
-    @media screen and (min-width: 768px) {
-     margin-bottom: 10px;
+   
+
+    @media (min-width: 768px) and  (max-width: 1199px){
+      margin-bottom: 10px;
      &:last-child{
        margin-bottom: 0px;
      }
@@ -39,46 +45,13 @@
     display: block;
   }
  
- 
-  
-  .contact__link{
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    @media screen and (min-width: 768px) {
-    width: 100%;
-    
-    }
-    
-  }
-   
-  .contact__icon{
-    margin-right: 10px;
-    fill: currentColor;
-
-    @media screen and (min-width: 768px) {
-      margin-right: 8px;
-     
-     
-    }
-  }
-  
-  
-  
- 
   
   
   .contact__link{
-    position: relative;
     display: flex;
     align-items: center;
-    justify-content: center;
- 
    padding-top: 32px;
    padding-bottom: 32px;
-  
    color: $feature-text-color;
    font-family: Roboto;
    font-weight: 500;
@@ -87,15 +60,18 @@
    letter-spacing: 0.02em;
    transition: color $transition;
 
-   @media screen and (min-width: 768px) {
-     display: block;
-     font-size: 12px;
-     line-height: 14px;
+   @media screen and (max-width: 1199px) {
+     
      padding-top: 0px;
      padding-bottom: 0px;
-
+     font-size: 12px;
+     line-height: 14px;
    
-     }
+     
+    }
+   
+     
+   
       
     &:hover,
     &:focus{    
@@ -112,4 +88,24 @@
   .contact__link{
     @extend %text;
   }
-  
+
+  .contact__icon{
+    fill: currentColor;
+    margin-right: 10px;
+
+    @media (min-width: 768px) and  (max-width: 1199px) {
+      width: 10px;
+       height: 14px;
+       margin-right: 8px;
+    }
+  }
+  .contact__icons{
+    fill: currentColor;
+    margin-right: 10px;
+    
+    @media (min-width: 768px) and  (max-width: 1199px) {
+      width: 14px;
+       height: 10px;
+       margin-right: 8px;
+    }
+  }

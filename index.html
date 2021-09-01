@@ -21,7 +21,7 @@
                 <a class="logo-link" href="./index.html">
                     <span class="logo-link__website">Web</span>Studio
                 </a> 
-                <div class="menu-box">
+                <div class="menu__box">
                     <button type="button" class="menu-toggle js-open-menu" 
                     aria-expanded="false"
                     aria-controls="mobile-menu">
@@ -33,34 +33,53 @@
                       
                    </button>
                 </div>
-                   
-               
                 
-                <div class="menu-container js-menu-container" id="mobile-menu">
-                    <button type="button" class="menu-toggle js-close-menu">
-                       <svg width="40" height="40"  aria-label="Переключатель мобильного меню">
-                           <use class="menu-toggle__close" href="./images/icons 2.svg#icon-close_1" ></use>
-                           <use class="menu-toggle__menu" href="./images/icons 2.svg#icon-menu_1" ></use>
-                       </svg>
-                       <ul class="menu-toggle__title">
-                           <li class="menu-toggle__list">
-                             <a href="./index.html" class="menu-toggle__link">Студия</a>
-                           </li>
-                          <li class="menu-toggle__list">
-                             <a href="./portfolio.html" class="menu-toggle__link">Портфолио</a>
-                          </li>
-                          <li class="menu-toggle__list">
-                             <a href="#" class="menu-toggle__link">Контакты</a>
-                          </li> 
-
-                        </ul>
-                   </button>
+                <div class="menu-container js-menu-container js-close-menu" id="mobile-menu" >
                     
+                       
+                   <ul class="menu-toggle__title">
+                       <li class="menu-toggle__list">
+                         <a href="./index.html" class="menu-toggle__link">Студия</a>
+                       </li>
+                      <li class="menu-toggle__list">
+                          <a href="./portfolio.html" class="menu-toggle__link">Портфолио</a>
+                      </li>
+                      <li class="menu-toggle__list">
+                          <a href="#" class="menu-toggle__link">Контакты</a>
+                      </li> 
+
+                    </ul>
+                        <div class="auth-mobile">
+                            <ul>
+                                <li class="auth-mobile__item">
+                                    <a class="auth-mobile__link" href="tel:+380961111111"> +38 096 111 11 11</a>
+                                </li>
+                               <li class="auth-mobile__item">
+                                    <a class="auth-mobile__mailto" href="mailto:info@devstudio.com">
+                                        info@devstudio.com</a
+                                      >
+                                </li>
+                                  
+                            </ul>
+                        </div>
+                        <div class="social">
+                              <li class="social__item">
+                                 <a class="social__link" href="#">instagram</a>
+                              </li>
+                              <li class="social__item">
+                                 <a class="social__link" href="#">twitter</a>
+                              </li>
+                              <li class="social__item">
+                                 <a class="social__link" href="#">facebook</a>
+                              </li>
+                              <li class="social__item">
+                                 <a class="social__link" href="#">linkedin</a>
+                              </li>
+                        </div>
+                        
+                   
 
                 </div>
-
-               
-
                 <nav class="main-nav">
                     <ul class="main-nav__site">
                       <li class="main-nav__item">
@@ -75,7 +94,7 @@
                 <ul class="contact">
                     <li class="contact__item">
                         <a href="mailto:info@devstudio.com" class="contact__link">
-                            <svg class="contact__icon" width="16" height="12">
+                            <svg class="contact__icons" width="16" height="12">
                                 <use href="./images/icons.svg#icon-envelope-hover"></use>  
                             </svg>
                             info@devstudio.com </a>
