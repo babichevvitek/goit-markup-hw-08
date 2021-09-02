@@ -35,7 +35,7 @@
     transition: transform $transition;
     
     @media screen and (max-width: 767px) {
-      max-width: 450px;
+     width: 100%;
       max-height: 609px; 
     }
   
@@ -83,6 +83,7 @@
     text-align: center;
     letter-spacing: 0.03em;
     color: $title-text-color; 
+   
    }
 
   .field{
@@ -272,7 +273,18 @@
    margin-bottom: 30px;
    padding-left: 12px;
   
-  
+   @media screen and (max-width: 767px) {
+   
+    font-size: 12px;
+    line-height: 14px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+
+
+   }
+
   }
   .policy__link{
     color: $accent-color;

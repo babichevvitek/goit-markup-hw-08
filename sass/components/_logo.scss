@@ -60,6 +60,9 @@
   }
 
 .menu-container {
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
   position: fixed;
   top: 0;
   left: 0;
@@ -78,6 +81,9 @@
   }
 
   .menu-toggle {
+    @media screen and (min-width: 768px) {
+      display: none;
+    }
     position: absolute;
     min-height: 40px;
     min-width: 40px;
@@ -109,7 +115,7 @@
  top: 10px;
  right: 15px;
  color: $hero-text-color;
-
+ 
 }
 
 .mobile-menu{
@@ -118,7 +124,7 @@
 }
 
 
-.menu-toggle .menu-toggle__close {
+.menu-toggle .menu-toggle__menu {
   display: none;
   overflow: scroll;
 }
@@ -130,72 +136,105 @@
 }
 
 .menu-toggle__title{
-  position: absolute;
+  
   display: block;
   font-weight: 500;
   list-style: none;
-  top: 48px;
+  justify-content: space-between;
   @extend %list;
   
   
+}
+.menu-toggle__list{
+  margin-bottom: 32px;
+  &:last-child{
+    margin-bottom: 0px;
+  }
+}
+
+.menu-toggle__link.current{
+  color: $accent-color;
 }
 
 .menu-toggle__link{
   font-family: Roboto;
   font-weight: 500;
   font-size: 40px;
-  line-height: 47px;
+  line-height:1.17;
   letter-spacing: 0.02em;
   color: $title-text-color;
-  overflow:  10px;
   @extend %text;
+  &:hover,
+  &:focus{
+    color: $accent-color;
+  }
 }
-.social{
-  position: absolute;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  list-style: none;
-  
-  bottom: 48px;
-}
+
 .auth-mobile {
   position: absolute;
- bottom: 134px;
+  bottom: 134px;
   @extend %list;
+}
+.auth-mobile__item{
+margin-bottom: 32px;
+  &:last-child{
+    margin-bottom: 0px;
+  }
 }
 
 .auth-mobile__link{
 
-  position: absolute;
+  
   font-size: 34px;
-  line-height: 40px;
+  line-height: 1.17;
   letter-spacing: 0.02em;
   text-align: center;
   @extend %text;
-  color: $feature-text-color;
+  color: $accent-color;
   list-style: none;
   bottom: 32px;
 }
 .auth-mobile__mailto{
   font-size: 24px;
-  line-height: 28px;
+  line-height: 1.16;
   letter-spacing: 0.02em;
-  text-align: center;
   @extend %text;
   color: $feature-text-color;
   list-style: none;
-  margin-top: 32px;
+ 
+}
+
+
+.social{
+ position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  bottom: 48px;
+  
 }
 .social__link{
   font-size: 18px;
- line-height: 22px;
+ line-height: 1.22;
  letter-spacing: 0.02em;
  color: $accent-color;
  @extend %text;
- margin-right: 20px;
 
  
+}
+.social__item{
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
+
+  &:last-child{
+    border-right: 1px solid rgba(33, 33, 33, 0.2);
+  }
+
+  margin-right: 20px;
+  &:last-child {
+  
+    margin-right: 0px;
+  }
 }
 .social__link:not(:last-child) {
   margin-right: 20px;
