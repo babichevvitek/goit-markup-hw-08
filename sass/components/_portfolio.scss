@@ -12,6 +12,10 @@
    .poster{
      padding-top: 94px;
      padding-bottom: 94px;
+     @media screen and (max-width: 767px) {
+      padding-top: 60px;
+      padding-bottom: 60px;
+    }
    }
    
    .site__buttons{
@@ -49,14 +53,30 @@
      display: flex;
      margin-top: 0;
      margin-bottom: 50px;
-     justify-content: center;
+     
+     @extend %list;
+
+    
+     @media screen and (max-width: 767px) {
+      margin-bottom: 40px;
+      flex-wrap: wrap;
+    }
+
+    @media screen and (min-width: 768px) {
+      justify-content: center;
+    }
    }
-   .site{
-       @extend %list
-   }
+   
 
    .site__two{
      margin-left: 8px;
+     
+     @media screen and (max-width: 767px) {
+      margin-bottom: 15px;
+      &:nth-child(n + 4) {
+        margin-bottom: 0px;
+      }
+    }
   
      &:first-child{ 
        margin-left: 0;
@@ -76,6 +96,13 @@
     margin-bottom: 30px;
     box-sizing: border-box;
      width: 370px;
+
+     @media screen and (max-width: 767px) {
+      width: 450px;
+      height: 404px;
+      margin-right: 0px;
+      margin-bottom: 0px;
+    }
    }
 
    .portfolio__sites{
@@ -91,8 +118,14 @@
    
     img {
      display: block;
-     max-width: 100%;
-     height: auto;   
+       max-width: 100%;
+       height: auto; 
+
+       @media screen and (max-width: 767px) {
+       width: 450px;
+       height: 294px;
+     
+      } 
     } 
    
    .signature{
@@ -107,6 +140,7 @@
    
    
    .portfolio {
+     @extend %list;
 
      &:nth-child(n + 7){
        margin-bottom: 0;
@@ -124,9 +158,7 @@
     
   
    
-   .portfolio{
-    @extend %list;
-   }
+   
    
    .portfolio__sites{
     @extend %text;

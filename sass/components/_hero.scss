@@ -15,7 +15,7 @@
   background-repeat: no-repeat;
   background-position: center;
 
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 1199px) {
     padding-top: 118px;
     padding-bottom: 118px;
     height: 400px;
@@ -29,7 +29,7 @@
   margin-right: auto;
   width: 696px;
 
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 1199px) {
     width: 360px;
   }
 }
@@ -45,7 +45,7 @@
   letter-spacing: 0.06em;
   text-transform: uppercase;
 
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 1199px) {
     font-size: 26px;
     line-height: 42px;
     

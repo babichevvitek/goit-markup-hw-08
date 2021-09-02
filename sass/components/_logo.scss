@@ -73,7 +73,7 @@
   background-color: $hero-text-color;
   transform: translateX(100%);
   transition: $transition;
- 
+  z-index: 999;
 }
 
 .menu-container.is-open {
@@ -98,6 +98,7 @@
     outline: none;
     top: 10px;
     right: 15px;
+    z-index: 999;
 
     &:hover,
     &:focus{

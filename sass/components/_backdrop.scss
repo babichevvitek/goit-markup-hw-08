@@ -34,9 +34,19 @@
     border-radius: 4px;
     transition: transform $transition;
     
-    @media screen and (max-width: 767px) {
-     width: 100%;
-      max-height: 609px; 
+    @media screen and (max-width: 450px) {
+      max-width: 450px;
+      width: 100vw;
+      max-height: 609px;
+      height: 100vh;
+    }
+    @media screen and (min-width: 768px) {
+      width: 450px;
+      height: 609px;
+    }
+    @media screen and (min-width: 1200px) {
+      width: 528px;
+      height: 581px;
     }
   
   }
@@ -273,15 +283,12 @@
    margin-bottom: 30px;
    padding-left: 12px;
   
-   @media screen and (max-width: 767px) {
+   @media screen and (max-width: 1199px) {
    
     font-size: 12px;
     line-height: 14px;
-    align-items: center;
-    justify-content: center;
+    padding-left: 0px;
     text-align: center;
-
-
 
    }
 
@@ -347,6 +354,11 @@
       background-color: $button-text-color;  
       box-shadow: $box-shadow-color;
     }
+    @media screen and (max-width: 1199px) {
    
+      margin-left: 85px;
+      margin-right:85px;
+  
+     }
   } 
   
