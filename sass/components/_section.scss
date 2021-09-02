@@ -18,7 +18,10 @@
       flex-wrap: wrap;
       margin: -15px;
     }
-    
+    @media (min-width: 1200px) {
+      display: flex; 
+      
+    }
    }
    
    .section__one {
