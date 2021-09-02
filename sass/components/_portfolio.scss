@@ -16,6 +16,7 @@
       padding-top: 60px;
       padding-bottom: 60px;
     }
+   
    }
    
    .site__buttons{
@@ -53,10 +54,8 @@
      display: flex;
      margin-top: 0;
      margin-bottom: 50px;
-     
      @extend %list;
 
-    
      @media screen and (max-width: 767px) {
       margin-bottom: 40px;
       flex-wrap: wrap;
@@ -64,6 +63,9 @@
 
     @media screen and (min-width: 768px) {
       justify-content: center;
+    }
+    @media screen and (max-width: 1199px) {
+      margin-bottom: 14px;
     }
    }
    
@@ -90,7 +92,25 @@
      flex-wrap: wrap;
     
    }
-   
+   .portfolio {
+    @extend %list;
+    @media screen and (min-width: 1200px) {
+     
+    
+     &:nth-child(n + 7){
+       margin-bottom: 0;
+     }
+
+     &:nth-child(-n + 3){
+       margin-top: 0;
+     }
+
+     &:nth-child(3n){
+       margin-right: 0;
+     }
+    }
+
+   }
    .portfolio{
     margin-right: 30px;
     margin-bottom: 30px;
@@ -101,8 +121,14 @@
       width: 450px;
       height: 404px;
       margin-right: 0px;
-      margin-bottom: 0px;
+      margin-bottom: 30px;
+      &:last-child{
+        margin-bottom: 0px; 
+      }
+
+      
     }
+    
    }
 
    .portfolio__sites{
@@ -139,22 +165,7 @@
    }
    
    
-   .portfolio {
-     @extend %list;
-
-     &:nth-child(n + 7){
-       margin-bottom: 0;
-     }
-
-     &:nth-child(-n + 3){
-       margin-top: 0;
-     }
-
-     &:nth-child(3n){
-       margin-right: 0;
-     }
-
-    }
+   
     
   
    
