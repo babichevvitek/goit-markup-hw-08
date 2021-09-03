@@ -152,6 +152,10 @@
 
     }
    } 
+   .thumb-img{
+    object-fit: cover;
+   }
+   
    .team__img{
     @media screen and (max-width: 767px) {
      height: 460px;
