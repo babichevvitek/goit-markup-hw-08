@@ -10,24 +10,24 @@
    
   
   }
-.team{
-    margin-bottom: 50px;
-    color: $title-text-color;
-    background: $fon-text-color;
-    font-family: Roboto;
-    font-weight: bold;
-    font-size: 36px;
-    line-height: 1.16;
-    text-align: center;
-    letter-spacing: 0.03em;
+    .team{
+     margin-bottom: 50px;
+     color: $title-text-color;
+     background: $fon-text-color;
+     font-family: Roboto;
+     font-weight: bold;
+      font-size: 36px;
+     line-height: 1.16;
+     text-align: center;
+     letter-spacing: 0.03em;
 
-    @media screen and (max-width: 767px) {
-     margin-bottom: 30px;
-     font-size: 28px;
-     line-height: 33px;
+     @media screen and (max-width: 767px) {
+       margin-bottom: 30px;
+       font-size: 28px;
+       line-height: 33px;
+     }
+
     }
-
-   }
    
    .team__people{
      padding: 30px 32px;
@@ -70,19 +70,9 @@
       display: flex; 
       
     }
-    
-    
        
     } 
-
-
-     
-     
     
-    
-
-   
-   
    .team__social{
     display: flex;
     list-style: none;
