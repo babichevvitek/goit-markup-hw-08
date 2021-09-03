@@ -12,6 +12,7 @@
    .poster{
      padding-top: 94px;
      padding-bottom: 94px;
+
       @media screen and (max-width: 767px) {
        padding-top: 60px;
        padding-bottom: 60px;
@@ -43,12 +44,12 @@
         opacity: 1;
       }
     
-   }
+    }
    
    .all{
      color: $hero-text-color;
      background-color: $accent-color;
-   }
+    }
    
    .site{
      display: flex;
@@ -57,25 +58,25 @@
      @extend %list;
 
      @media screen and (max-width: 767px) {
-      margin-bottom: 40px;
-      flex-wrap: wrap;
-    }
+       margin-bottom: 40px;
+       flex-wrap: wrap;
+     }
 
-    @media screen and (min-width: 768px) {
-      justify-content: center;
-    }
+     @media screen and (min-width: 768px) {
+       justify-content: center;
+     }
 
-    @media   (min-width: 768px) and (max-width: 1199px) {
-      margin-bottom: 14px;
+     @media   (min-width: 768px) and (max-width: 1199px) {
+       margin-bottom: 14px;
+     }
     }
-   }
    
 
    .site__two{
      margin-left: 8px;
      
      @media screen and (max-width: 767px) {
-      margin-bottom: 15px;
+       margin-bottom: 15px;
        &:nth-child(n + 4) {
          margin-bottom: 0px;
        }
@@ -116,31 +117,32 @@
     @media screen and (min-width: 1200px) {
      
     
-     &:nth-child(n + 7){
-       margin-bottom: 0;
-     }
+      &:nth-child(n + 7){
+        margin-bottom: 0;
+      }
 
-     &:nth-child(-n + 3){
-       margin-top: 0;
-     }
+      &:nth-child(-n + 3){
+        margin-top: 0;
+      }
 
      &:nth-child(3n){
        margin-right: 0;
-     }
+      }
     }
 
-  }
+   }
     .portfolio{
    
 
       @media screen and (max-width: 767px) {
-      width: 450px;
-      height: 404px;
-      margin-right: 0px;
-      margin-bottom: 30px;
-      &:last-child{
-        margin-bottom: 0px; 
-      }
+       width: 450px;
+       height: 404px;
+       margin-right: 0px;
+       margin-bottom: 30px;
+       &:last-child{
+         margin-bottom: 0px; 
+       }
+      } 
 
       @media (min-width: 768px) and (max-width: 1199px) {
        flex-basis: calc((100% - 4 * 15px) / 2);
@@ -157,6 +159,7 @@
     }
 
    .portfolio__sites{
+     @extend %text;
      position: relative;
      transition: box-shadow $transition;
      display: block;
@@ -165,6 +168,13 @@
        &:focus{
         box-shadow: $shades;
       }
+      @media (min-width: 767px) and (max-width: 1199px){
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+      
+       }
+
     }
    
     img {
@@ -201,9 +211,7 @@
    
    
    
-   .portfolio__sites{
-    @extend %text;
-   }
+   
    
    .signature__decoration{
      margin-top: 0;
@@ -227,6 +235,14 @@
    .portfolio__thumb{
      position: relative;
      overflow: hidden;
+
+     @media (min-width: 767px) and (max-width: 1199px){
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+      
+     }
+
     }
    
     .portfolio__overlay{
@@ -264,7 +280,9 @@
       line-height: 1.55;
       color: $hero-text-color;
       letter-spacing: 0.03em;
+    }
+     
  
-     } 
+     
   
-   
+  
