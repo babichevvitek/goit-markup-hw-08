@@ -15,14 +15,7 @@
   background-repeat: no-repeat;
   background-position: center;
 
-  @media screen and (max-width: 767px) {
-    background-image: linear-gradient(
-      rgba(128, 128, 129, 0.4),
-      rgba(47, 48, 58, 0.4)
-    ),
-    url(../../images2/mobile1.jpg);
-  
-  }
+ 
 
   @media screen and (max-width: 1199px) {
     padding-top: 118px;
