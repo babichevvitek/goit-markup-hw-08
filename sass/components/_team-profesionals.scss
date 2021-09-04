@@ -154,6 +154,7 @@
    } 
    .thumb-img{
     object-fit: cover;
+    
    }
    
    .team__img{
@@ -163,6 +164,10 @@
     } 
     @media  (min-width: 768px) and (max-width: 1199px){
       height: 374px;
+      width: 100%;
+     }
+     @media  (min-width: 1200px){
+      height: 260px;
       width: 100%;
      }
    }
