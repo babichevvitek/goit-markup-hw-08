@@ -1012,6 +1012,11 @@ ul, p {
      object-fit: cover;
 }
 
+.team__img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 @media screen and (max-width: 767px) {
   .team__img {
     height: 460px;

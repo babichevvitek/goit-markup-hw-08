@@ -158,6 +158,7 @@
    }
    
    .team__img{
+    object-fit: cover;
     @media screen and (max-width: 767px) {
      height: 460px;
      width: 100%;
