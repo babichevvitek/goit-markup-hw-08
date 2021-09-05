@@ -159,13 +159,6 @@ ul, p {
   z-index: 999;
 }
 
-@media screen and (max-width: 480px) {
-  .menu-container {
-    -webkit-transform: translateX(150%);
-            transform: translateX(150%);
-  }
-}
-
 .menu-container.is-open {
   -webkit-transform: translateX(0);
           transform: translateX(0);
