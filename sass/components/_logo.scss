@@ -79,7 +79,10 @@
   transform: translateX(100%);
   transition: $transition;
   z-index: 999;
- 
+  @media screen and (max-width: 480px) {
+    transform: translateX(150%);
+    
+  }
 }
 
 .menu-container.is-open {

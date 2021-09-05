@@ -270,7 +270,7 @@
   
   
   .policy {
-   display: block;
+    display: inline-block;
     flex-direction: column;
     position: relative;
     font-family: Roboto;
@@ -282,7 +282,8 @@
    color: $feature-text-color;
    margin-bottom: 30px;
    padding-left: 12px;
-  
+  justify-content: center;
+  text-align: center;
    @media screen and (max-width: 1199px) {
    
     font-size: 12px;
@@ -298,7 +299,8 @@
   
   }
   .policy__checkbox{
-     @extend %visually-hidden
+     @extend %visually-hidden;
+    
   }
   
   
@@ -311,10 +313,7 @@
    border: 2px solid $title-text-color;
    border-radius: 4px;
    transition: background-color $transition;
-   align-items: center;
-   justify-content: center;
-   text-align: center;
-  
+   padding-top: 5px;
   }
 
   .policy__checkbox:checked + .policy__icon{
