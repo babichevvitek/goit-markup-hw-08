@@ -1,5 +1,5 @@
 .footer-container{
- 
+
  
   @media  (min-width: 768px) and (max-width: 1199px){
     display: block;
@@ -7,7 +7,7 @@
   }
   @media  (min-width: 1200px){
     display: flex;
-    
+    align-items: baseline;
    }
  
 }
@@ -17,10 +17,11 @@
   @media  (min-width: 768px) and (max-width: 1199px){
     display: flex;
     align-items: baseline;
+    margin-bottom: 60px;
    }
    @media  (min-width: 1200px){
     display: flex;
-    
+    align-items: baseline;
    }
 }
 
@@ -40,7 +41,7 @@
     @media  (min-width: 768px) and (max-width: 1199px){
       width: 231px;
       margin-left: 76px;
-     margin-bottom: 20px;
+    
      }
      @media  (min-width: 1200px){
      

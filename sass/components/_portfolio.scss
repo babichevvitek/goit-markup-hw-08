@@ -67,20 +67,27 @@
      }
 
      @media   (min-width: 768px) and (max-width: 1199px) {
-       margin-bottom: 14px;
+       margin-bottom: 30px;
      }
     }
    
 
    .site__two{
      margin-left: 8px;
-     
+
+    
      @media screen and (max-width: 767px) {
        margin-bottom: 15px;
        &:nth-child(n + 4) {
          margin-bottom: 0px;
        }
+       &:nth-child(4) {
+         margin-left: 0px;
+       }
+
       } 
+      
+     
   
      &:first-child{ 
        margin-left: 0;
@@ -136,7 +143,7 @@
 
       @media screen and (max-width: 767px) {
        width: 450px;
-       height: 404px;
+       
        margin-right: 0px;
        margin-bottom: 30px;
        &:last-child{
@@ -164,6 +171,7 @@
      position: relative;
      transition: box-shadow $transition;
      display: block;
+     height: 100%;
    
        &:hover,
        &:focus{
@@ -274,6 +282,11 @@
       line-height: 1.55;
       color: $hero-text-color;
       letter-spacing: 0.03em;
+      @media screen and (max-width: 450px) {
+        padding: 49px 24px;
+      }
+
+
     }
      
  

@@ -5,6 +5,7 @@
 
  .flex-center{
    display: flex;
+   position: relative;
    
    @media screen and (min-width: 768px) {
     align-items: center;
@@ -57,11 +58,16 @@
       
     }
   }
+  .menu__box{
+    @media  (min-width: 320px)and (max-width: 479px){
+     bottom: none;
+      
+    }
+  }
 
 .menu-container {
-  @media screen and (min-width: 768px) {
-    display: none;
-  }
+ 
+ 
   position: fixed;
   top: 0;
   left: 0;
@@ -73,6 +79,7 @@
   transform: translateX(100%);
   transition: $transition;
   z-index: 999;
+ 
 }
 
 .menu-container.is-open {
@@ -98,10 +105,12 @@
     top: 10px;
     right: 15px;
     z-index: 999;
+   
 
     &:hover,
     &:focus{
       fill: $accent-color;
+
     }
     @media screen and (min-width: 768px) {
       display: none;
@@ -115,7 +124,8 @@
  top: 10px;
  right: 15px;
  color: $hero-text-color;
- 
+
+
 }
 
 .mobile-menu{
@@ -153,7 +163,7 @@
 }
 
 .menu-toggle__link.current{
-  color: $accent-color;
+  color: $button-text-color;
 }
 
 .menu-toggle__link{
@@ -166,7 +176,7 @@
   @extend %text;
   &:hover,
   &:focus{
-    color: $accent-color;
+    color: $button-text-color;
   }
 }
 
@@ -190,9 +200,17 @@ margin-bottom: 32px;
   letter-spacing: 0.02em;
   text-align: center;
   @extend %text;
-  color: $accent-color;
+  color:  $accent-color;
   list-style: none;
   bottom: 32px;
+
+   &:hover,
+   &:focus{
+  
+   color: $feature-text-color;
+
+  }
+
 }
 .auth-mobile__mailto{
   font-size: 24px;
@@ -201,11 +219,16 @@ margin-bottom: 32px;
   @extend %text;
   color: $feature-text-color;
   list-style: none;
- 
+
+   &:hover,
+   &:focus{
+   color:  $accent-color;
+
+  }
 }
 
 
-.social{
+.social__box{
  position: absolute;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -218,9 +241,14 @@ margin-bottom: 32px;
   font-size: 18px;
  line-height: 1.22;
  letter-spacing: 0.02em;
- color: $accent-color;
+ color:  $accent-color;
  @extend %text;
+   &:hover,
+   &:focus{
+   
+   color: $feature-text-color;
 
+  }
  
 }
 .social__item{

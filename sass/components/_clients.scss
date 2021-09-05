@@ -9,6 +9,11 @@
  }
  
 .clients__logos{
+  @media  (min-width: 320px) and (max-width: 479px){
+    justify-content: center;
+   align-items: center;
+  }
+
   @media screen and (max-width: 767px) {
     
     display: flex; 

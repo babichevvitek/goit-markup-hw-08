@@ -274,8 +274,7 @@
     flex-direction: column;
     position: relative;
     font-family: Roboto;
-    align-items: center;
-   justify-content: center;
+   align-items: center;
    font-size: 14px;
    line-height: 1.71;
    
@@ -312,6 +311,10 @@
    border: 2px solid $title-text-color;
    border-radius: 4px;
    transition: background-color $transition;
+   align-items: center;
+   justify-content: center;
+   text-align: center;
+  
   }
 
   .policy__checkbox:checked + .policy__icon{
